@@ -84,5 +84,9 @@ function sort (array) {
 
 document.getElementById("start").innerHTML = unsortedArr;
 
-document.getElementById("go").addEventListener("click", sort(unsortedArr));
+var goBtn = document.querySelector("#go");
+
+goBtn.addEventListener("click", function () {
+  sort(unsortedArr);
+});
 
